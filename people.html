@@ -6,8 +6,10 @@
 	<meta name="author" content="Elisabeth Asbaek Jeppesen"> <!-- author -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
 
-	<link href="/css/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
+
+	<script src="/js/app.js" type="module" defer></script> <!-- javascript -->
 	
 	<title>Star Wars API</title> <!-- title in tab -->
 </head>
@@ -16,9 +18,9 @@
 <div id="wrapper"> <!-- start wrapper -->
 
 <section class="starryBackground">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
 </section>
 
 <header>
@@ -40,41 +42,30 @@
 		</ul>
 	</nav>
 </header>
-	
-<main class="frontpage">
 
-	<div class="navigationButtons__first">
-		<article>
-			<a href="/people.html">People</a>
-		</article>
-		<br>
-		<article>
-			<a href="/planets.html">Planets</a>
-		</article>
-		<br>
-		<article>
-			<a href="/starships.html">Starships</a>
-		</article>
-	</div>
+<main class="characterDetails">
 
-	<h1 class="headline">Star<br>Wars</h1>
+    <h1 class="headline">Star<br>Wars</h1>
+    
+    <section>
+        <ul class="characterList">
 
-	<div class="navigationButtons__second">
-		<article>
-			<a href="/vehicles.html">Vehicles</a>
-		</article>
-		<br>
-		<article>
-			<a href="/species.html">Species</a>
-		</article>
-		<br>
-		<article>
-			<a href="/films.html">Films</a>
-		</article>
-	</div>
-	
+        </ul>
+        
+        <div class="arrows">
+            <a class="fas fa-chevron-left previousLink"></a>
+            <a class="fas fa-chevron-right nextLink"></a>
+        </div>
+    </section>
+    
 </main>
-	
+
+<template id="character">
+    <li class="characterListItem">
+        <a href="" class="character"></a>
+    </li>
+</template>
+
 <footer>
 	<p>Made using <a href="http://swapi.dev" target="_blank">Star Wars API</a></p>
 </footer>

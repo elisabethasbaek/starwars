@@ -42,7 +42,3 @@ fetch(`https://swapi.dev/api/people?page=${page}`)
             characterList.appendChild(clone);
         })
     });
-
-
-let title = document.querySelector("title");
-title.innerText = "Characters | " + title.innerText;

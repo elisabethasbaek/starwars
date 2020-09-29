@@ -43,6 +43,6 @@ fetch(`https://swapi.dev/api/people?page=${page}`)
         })
     });
 
-
-let title = document.querySelector("title");
-title.innerText = "Characters | " + title.innerText;
+/* Update title: */
+/* let title = document.querySelector("title");
+title.innerText = "People | " + title.innerText; */
