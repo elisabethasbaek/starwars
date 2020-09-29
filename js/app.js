@@ -3,13 +3,19 @@ let url = new URLSearchParams(window.location.search);
 let offset = url.get("offset") ? url.get("offset") : 0;
 let previousOffset, nextOffset;
 
-fetch(`https://swapi.dev/api/people?offset=${offset}`)
+let nextLink = document.querySelector(".nextLink");
+let previousLink = document.querySelector(".previousLink");
+
+fetch(`https://swapi.dev/api/people?page=${offset}`)
     .then(res => res.json())
     .then(function(data){
         let maxOffset = data.count - (data.count % 15);
 
         nextOffset = offset >= maxOffset ? maxOffset : parseInt(offset) + 15;
         previousOffset = offset <= 0 ? 0 : parseInt(offset) - 15;
+
+        nextLink.href = `?offset=${nextOffset}`;
+        previousLink.href = `?offset=${previousOffset}`;
 
         /* character template: */
         let character = document.querySelector("#character");

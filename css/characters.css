@@ -1,0 +1,45 @@
+.characterDetails{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	height: 100vh;
+}
+
+.characterDetails .headline{
+	font-family: 'star_jediregular';
+	text-transform: uppercase;
+	font-size: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	align-self: center;
+	transition: 2s;
+}
+
+.characterDetails section{
+    align-self: center;
+    transition: 2s;
+}
+
+.characterList a{
+	font-size: 1vw;
+	line-height: 3rem;
+	text-align: start;
+}
+
+.characterList a:hover{
+	padding-left: 1vw;
+	color: #1fa5ff;
+	transition: 0.5s;
+}
+
+.arrows{
+    font-size: 2vw;
+    text-align: start;
+    letter-spacing: 3vw;
+    padding-top: 2rem;
+}
+
+.arrows a:hover{
+    color: #1fa5ff;
+    transition: 0.5s;
+	transform: scale(1.2);
+}

@@ -4,7 +4,7 @@
 	height: 100vh;
 }
 
-main .headline{
+.frontpage .headline{
     grid-area: 1/2/2/3;
 	font-family: 'star_jediregular';
 	text-transform: uppercase;

@@ -3,6 +3,7 @@
 @import '/css/header.css';
 @import '/css/footer.css';
 @import '/css/index.css';
+@import '/css/characters.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
@@ -18,7 +19,7 @@
 
 *::-webkit-scrollbar {
 	display: none;
-  }
+}
 
 #wrapper{
 	max-width: 100vw;
@@ -41,24 +42,4 @@ a{
 
 li{
 	list-style: none;
-}
-
-main{
-	display: grid;
-	grid-template-columns: 75% 25%;
-	height: 100vh;
-}
-
-.characterList{
-	font-size: 1vw;
-	line-height: 3rem;
-	text-align: start;
-	align-self: center;
-	transition: 2s;
-}
-
-.characterList a:hover{
-	padding-left: 1vw;
-	color: #1fa5ff;
-	transition: 0.5s;
 }
