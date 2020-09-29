@@ -1,0 +1,24 @@
+footer{
+    position: fixed;   
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    text-align: end;
+    font-family: 'Anonymous Pro', monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    color: #ffcb1f;
+    background: rgba(17, 14, 29, 0.7);
+    padding-right: 2rem;
+}
+
+footer a{
+    color: #ffcb1f;
+    font-style: italic;
+}
+
+footer a:hover{
+    color: #1FA5FF;
+}

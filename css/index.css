@@ -1,0 +1,54 @@
+.frontpage{
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	height: 100vh;
+}
+
+main .headline{
+    grid-area: 1/2/2/3;
+	font-family: 'star_jediregular';
+	text-transform: uppercase;
+	font-size: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	align-self: center;
+	transition: 2s;
+}
+
+.navigationButtons__first,
+.navigationButtons__second{
+    align-self: center;
+}
+
+.navigationButtons__first{
+    text-align: end;
+}
+
+.navigationButtons__second{
+    text-align: start;
+}
+
+.navigationButtons__first a,
+.navigationButtons__second a{
+    font-size: 2vw;
+    transition: 2s;
+    max-width: 100%;
+}
+
+.navigationButtons__first a:hover{
+    color: #1fa5ff;
+    margin-right: 1vw;
+	transition: 1s;
+}
+
+.navigationButtons__second a:hover{
+    color: #1fa5ff;
+    margin-left: 1vw;
+	transition: 1s;
+}
+
+.navigationButtons__first article,
+.navigationButtons__second article{
+    border-bottom: 1px solid#FFCB1F;
+    margin: 1vw 0;
+}

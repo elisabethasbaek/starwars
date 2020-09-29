@@ -1,0 +1,47 @@
+header{
+    position: fixed;   
+    top: 0;
+    right: 0;
+    width: 100vw;
+    background: rgba(17, 14, 29, 0.7);
+    display: grid;
+    grid-template-columns: 45% 1fr 45%;
+}
+
+header .headline{
+	font-family: 'star_jediregular';
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	align-self: center;
+}
+
+header ul{
+    font-family: 'Anonymous Pro', monospace;
+    display: flex;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.firstNav ul{
+    justify-content: flex-end;
+}
+
+.secondNav ul{
+    justify-content: flex-start;
+}
+
+.firstNav a,
+.secondNav a{
+    padding: 0 1vw;
+    line-height: 4rem;
+    color: #FFCB1F;
+}
+
+.firstNav a:hover,
+.secondNav a:hover{
+    color: #1fa5ff;
+    font-style: italic;
+}
