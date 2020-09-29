@@ -3,7 +3,8 @@
 @import '/css/header.css';
 @import '/css/footer.css';
 @import '/css/index.css';
-@import '/css/characters.css';
+@import '/css/people.css';
+@import '/css/planets.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');

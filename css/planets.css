@@ -1,0 +1,53 @@
+.planetDetails{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	height: 100vh;
+}
+
+.planetDetails section{
+    align-self: center;
+    justify-self: end;
+    transition: 2s;
+    width: 100%;
+}
+
+.planetListItem{
+    font-size: 1vw;
+	line-height: 3rem;
+	text-align: end;
+}
+
+.planet:hover{
+    padding-right: 1vw;
+	color: #1fa5ff;
+	transition: 0.5s;
+}
+
+.planetDetails .arrows{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    text-align: end;
+    font-size: 2vw;
+    padding-top: 2rem;
+}
+
+.planetDetails .arrows a:hover{
+    color: #1fa5ff;
+    transition: 0.5s;
+	transform: scale(1.2);
+}
+
+.planetDetails .nextLink{
+    grid-area: 1/2/2/3;
+}
+
+.planetDetails .headline{
+    font-family: 'star_jediregular';
+    text-transform: uppercase;
+    font-size: 12vw;
+    line-height: 12vw;
+    text-align: center;
+    align-self: center;
+    transition: 2s;
+}

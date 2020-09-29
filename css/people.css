@@ -19,27 +19,33 @@
     transition: 2s;
 }
 
-.characterList a{
+.character{
 	font-size: 1vw;
 	line-height: 3rem;
 	text-align: start;
 }
 
-.characterList a:hover{
+.character:hover{
 	padding-left: 1vw;
 	color: #1fa5ff;
 	transition: 0.5s;
 }
 
-.arrows{
+.characterDetails .arrows{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
     font-size: 2vw;
-    text-align: start;
     letter-spacing: 3vw;
-    padding-top: 2rem;
+	padding-top: 2rem;
+	text-align: start;
 }
 
-.arrows a:hover{
+.characterDetails .arrows a:hover{
     color: #1fa5ff;
     transition: 0.5s;
-	transform: scale(1.2);
+	transform: scale(1.1);
+}
+
+.characterDetails .nextLink{
+    grid-area: 1/2/2/3;
 }
