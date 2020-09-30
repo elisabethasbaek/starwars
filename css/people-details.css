@@ -1,15 +1,61 @@
 .detailsPeople{
 	display: grid;
 	grid-template-columns: 60% 40%;
-	height: 100vh;
+    height: 100vh;
+}
+
+.detailsPeople__bigBold{
+    position: fixed;
+    left: 0;
+    top: 25%;
+    max-width: 60%;
+    margin-left: 5vw;
+}
+
+.detailsPeople__list{
+    padding: 10vw 0;
+    margin-left: 5vw;
 }
 
 .detailsPeople__name{
 	font-family: 'star_jediregular';
-	text-transform: uppercase;
-	font-size: 12vw;
-	line-height: 12vw;
-	text-align: center;
-	align-self: center;
+    font-size: 7vw;
+    text-transform: lowercase;
+	line-height: 7vw;
+    text-align: start;
 	transition: 2s;
+}
+
+.detailsPeople__introduction{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+
+.detailsPeople__description{
+    font-family: 'Poller One', cursive;
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+    padding-top: 2vw;
+    max-width: 60%;
+}
+
+.detailsPeople__category{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.detailsPeople__category:not(:first-of-type){
+    padding-top: 2.5vw;
+}
+
+.detailsPeople__specifics{
+    padding-left: 3vw;
+    line-height: 2vw;
+}
+
+.detailsPeople__films{
+    display: flex;
+    flex-direction: column;
 }

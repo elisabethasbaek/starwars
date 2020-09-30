@@ -45,29 +45,54 @@
 
 <main class="detailsPeople">
 
-    <section class="detailsPeople__bigBold">
-        <p>Lorem ipsum dolor sit:</p>
+    <section>
+        <section class="detailsPeople__bigBold">
+            <p class="detailsPeople__introduction">Lorem ipsum dolor sit:</p>
 
-        <h1 class="detailsPeople__name"></h1>
+            <h1 class="detailsPeople__name"></h1>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur eum fuga quia labore sunt blanditiis voluptates excepturi, incidunt et est ex alias eveniet ratione itaque expedita rem cum officia, aut ipsa, tempore libero. Animi maxime nisi enim provident sed! Distinctio incidunt esse reprehenderit tempore impedit necessitatibus in quas vero quisquam et placeat excepturi, ipsum dignissimos fugit cumque molestiae at.</p>
+            <p class="detailsPeople__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In inventore nisi nulla? Ullam cum est quia at laudantium dolor amet, ex nesciunt nulla, fugit aliquid, facere voluptatem. Illo, saepe! Ab.</p>
+        </section>
     </section>
 
     <section class="detailsPeople__list">
-        <p class="detailsPeople__category">Homeworld:</p>
+        <p class="detailsPeople__category category__species">Species:</p>
+        <p class="detailsPeople__species detailsPeople__specifics"></p>
+
+        <p class="detailsPeople__category category__homeworld">Homeworld:</p>
         <p class="detailsPeople__homeworld detailsPeople__specifics"></p>
         
-        <p class="detailsPeople__category">Films:</p>
+        <p class="detailsPeople__category category__films">Films:</p>
         <ul class="detailsPeople__films detailsPeople__specifics"></ul>
 
-        <p class="detailsPeople__category">Vehicles:</p>
+        <p class="detailsPeople__category category__vehicles">Vehicles:</p>
         <ul class="detailsPeople__vehicles detailsPeople__specifics"></ul>
 
-        <p class="detailsPeople__category">Starships:</p>
+        <p class="detailsPeople__category category__starships">Starships:</p>
         <ul class="detailsPeople__starships detailsPeople__specifics"></ul>
     </section>
 
 </main>
+
+<!-- TEMPLATES: -->
+    <template id="details__films">
+        <li class="details__filmListItem">
+            <a href="" class="details__film"></a>
+        </li>
+    </template>
+
+    <template id="details__vehicles">
+        <li class="details__vehicleListItem">
+            <a href="" class="details__vehicle"></a>
+        </li>
+    </template>
+
+    <template id="details__starships">
+        <li class="details__starshipListItem">
+            <a href="" class="details__starship"></a>
+        </li>
+    </template>
+<!--             -->
 
 <footer>
     <p>Made using <a href="www.swapi.dev" target="_blank">Star Wars API</a></p>
