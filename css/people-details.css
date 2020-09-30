@@ -1,0 +1,15 @@
+.detailsPeople{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	height: 100vh;
+}
+
+.detailsPeople__name{
+	font-family: 'star_jediregular';
+	text-transform: uppercase;
+	font-size: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	align-self: center;
+	transition: 2s;
+}

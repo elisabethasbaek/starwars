@@ -6,16 +6,22 @@
 	<meta name="author" content="Elisabeth Asbaek Jeppesen"> <!-- author -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
 
-    <link href="/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
 
-	<script src="/people-details.js" type="module" defer></script> <!-- javascript -->
+	<script src="/js/details.js" type="module" defer></script> <!-- javascript -->
 	
 	<title>Star Wars API</title>
 </head>
   
 <body>
 <div id="wrapper"> <!-- start wrapper -->
+    
+<section class="starryBackground">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+</section>
 
 <header>
     <nav class="firstNav">
@@ -37,30 +43,31 @@
     </nav>
 </header>
 
-<main class="characterDetails">
-    <section class="characterDetails__heading">
-        <img src="" alt="Pokemon illustration" class="image__front">
-        <h1 class="characterDetails__name"></h1>
-        <img src="" alt="Pokemon illustration" class="image__back">
+<main class="detailsPeople">
+
+    <section class="detailsPeople__bigBold">
+        <p>Lorem ipsum dolor sit:</p>
+
+        <h1 class="detailsPeople__name"></h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur eum fuga quia labore sunt blanditiis voluptates excepturi, incidunt et est ex alias eveniet ratione itaque expedita rem cum officia, aut ipsa, tempore libero. Animi maxime nisi enim provident sed! Distinctio incidunt esse reprehenderit tempore impedit necessitatibus in quas vero quisquam et placeat excepturi, ipsum dignissimos fugit cumque molestiae at.</p>
     </section>
 
-    <section class="characterDetails__list">
-        <p class="characterDetails__category">Species: </p>
-        <p class="characterDetails__species characterDetails__specifics"></p>
+    <section class="detailsPeople__list">
+        <p class="detailsPeople__category">Homeworld:</p>
+        <p class="detailsPeople__homeworld detailsPeople__specifics"></p>
         
-        <p class="characterDetails__category">Type:</p>
-        <ul class="characterDetails__types characterDetails__specifics"></ul>
+        <p class="detailsPeople__category">Films:</p>
+        <ul class="detailsPeople__films detailsPeople__specifics"></ul>
 
-        <p class="characterDetails__category">Abilities:</p>
-        <ul class="characterDetails__abilities characterDetails__specifics"></ul>
+        <p class="detailsPeople__category">Vehicles:</p>
+        <ul class="detailsPeople__vehicles detailsPeople__specifics"></ul>
+
+        <p class="detailsPeople__category">Starships:</p>
+        <ul class="detailsPeople__starships detailsPeople__specifics"></ul>
     </section>
-</main>
 
-<template id="character">
-    <li class="characterListItem">
-        <a href="" class="character"></a>
-    </li>
-</template>
+</main>
 
 <footer>
     <p>Made using <a href="www.swapi.dev" target="_blank">Star Wars API</a></p>
