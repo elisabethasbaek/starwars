@@ -1,0 +1,51 @@
+.starshipsDetails{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	height: 100vh;
+}
+
+.starshipsDetails .headline{
+	font-family: 'star_jediregular';
+	text-transform: uppercase;
+	font-size: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	align-self: center;
+	transition: 2s;
+}
+
+.starshipsDetails section{
+    align-self: center;
+    transition: 2s;
+}
+
+.starships{
+	font-size: 1vw;
+	line-height: 3rem;
+	text-align: start;
+}
+
+.starships:hover{
+	padding-left: 1vw;
+	color: #1fa5ff;
+	transition: 0.5s;
+}
+
+.starshipsDetails .arrows{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2vw;
+    letter-spacing: 3vw;
+	padding-top: 2rem;
+	text-align: start;
+}
+
+.starshipsDetails .arrows a:hover{
+    color: #1fa5ff;
+    transition: 0.5s;
+	transform: scale(1.1);
+}
+
+.starshipsDetails .nextLink{
+    grid-area: 1/2/2/3;
+}

@@ -1,0 +1,53 @@
+.filmDetails{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	height: 100vh;
+}
+
+.filmDetails section{
+    align-self: center;
+    justify-self: end;
+    transition: 2s;
+    width: 100%;
+}
+
+.filmListItem{
+    font-size: 1vw;
+	line-height: 3rem;
+	text-align: end;
+}
+
+.film:hover{
+    padding-right: 1vw;
+	color: #1fa5ff;
+	transition: 0.5s;
+}
+
+.filmDetails .arrows{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    text-align: end;
+    font-size: 2vw;
+    padding-top: 2rem;
+}
+
+.filmDetails .arrows a:hover{
+    color: #1fa5ff;
+    transition: 0.5s;
+	transform: scale(1.2);
+}
+
+.filmDetails .nextLink{
+    grid-area: 1/2/2/3;
+}
+
+.filmDetails .headline{
+    font-family: 'star_jediregular';
+    text-transform: uppercase;
+    font-size: 12vw;
+    line-height: 12vw;
+    text-align: center;
+    align-self: center;
+    transition: 2s;
+}

@@ -39,7 +39,7 @@ function listOfPeople(){
 
                 let clone = character.content.cloneNode(true);
                 clone.querySelector(".character").innerText = result.name;
-                clone.querySelector(".character").href = `/character-sheet.html?id=${id}`;
+                clone.querySelector(".character").href = `/people-sheet.html?id=${id}`;
 
                 characterList.appendChild(clone);
             })

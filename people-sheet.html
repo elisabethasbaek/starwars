@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"> <!-- language -->
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Elisabeth Asbaek Jeppesen"> <!-- author -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
+
+    <link href="/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
+
+	<script src="/people-details.js" type="module" defer></script> <!-- javascript -->
+	
+	<title>Star Wars API</title>
+</head>
+  
+<body>
+<div id="wrapper"> <!-- start wrapper -->
+
+<header>
+    <nav class="firstNav">
+        <ul>
+            <li><a href="">Characters</a></li>
+            <li><a href="">Planets</a></li>
+            <li><a href="">Starships</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="headline"><a href="/index.html">Star<br>Wars</a></h1>
+    
+    <nav class="secondNav">
+        <ul>
+            <li><a href="">Vehicles</a></li>
+            <li><a href="">Species</a></li>
+            <li><a href="">Films</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="characterDetails">
+    <section class="characterDetails__heading">
+        <img src="" alt="Pokemon illustration" class="image__front">
+        <h1 class="characterDetails__name"></h1>
+        <img src="" alt="Pokemon illustration" class="image__back">
+    </section>
+
+    <section class="characterDetails__list">
+        <p class="characterDetails__category">Species: </p>
+        <p class="characterDetails__species characterDetails__specifics"></p>
+        
+        <p class="characterDetails__category">Type:</p>
+        <ul class="characterDetails__types characterDetails__specifics"></ul>
+
+        <p class="characterDetails__category">Abilities:</p>
+        <ul class="characterDetails__abilities characterDetails__specifics"></ul>
+    </section>
+</main>
+
+<template id="character">
+    <li class="characterListItem">
+        <a href="" class="character"></a>
+    </li>
+</template>
+
+<footer>
+    <p>Made using <a href="www.swapi.dev" target="_blank">Star Wars API</a></p>
+</footer>
+
+</div> <!-- end wrapper -->
+</body>
+
+</html>
