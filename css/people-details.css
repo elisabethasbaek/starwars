@@ -46,6 +46,10 @@
     text-transform: uppercase;
 }
 
+.detailsPeople__category a:hover{
+    color: #1fa5ff;
+}
+
 .detailsPeople__category:not(:first-of-type){
     padding-top: 2.5vw;
 }
@@ -58,4 +62,12 @@
 .detailsPeople__films{
     display: flex;
     flex-direction: column;
+}
+
+.details__film:hover,
+.details__vehicle:hover,
+.details__starship:hover{
+    color: #1fa5ff;
+    margin-left: 1vw;
+	transition: 1s;
 }

@@ -50,6 +50,10 @@
     padding-top: 2.5vw;
 }
 
+.detailsPlanets__category a:hover{
+    color: #1fa5ff;
+}
+
 .detailsPlanets__specifics{
     padding-left: 3vw;
     line-height: 2vw;
@@ -59,4 +63,11 @@
 .detailsPlanets__films{
     display: flex;
     flex-direction: column;
+}
+
+.details__resident:hover,
+.details__film:hover{
+    color: #1fa5ff;
+    margin-left: 1vw;
+	transition: 1s;
 }
