@@ -53,6 +53,7 @@
 .detailsPlanets__specifics{
     padding-left: 3vw;
     line-height: 2vw;
+    text-transform: capitalize;
 }
 
 .detailsPlanets__films{
