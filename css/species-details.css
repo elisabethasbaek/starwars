@@ -65,6 +65,8 @@
     flex-direction: column;
 }
 
+.details__homeworld:hover,
+.details__people:hover,
 .details__film:hover{
     color: #1fa5ff;
     margin-left: 1vw;

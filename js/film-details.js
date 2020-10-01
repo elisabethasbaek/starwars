@@ -2,27 +2,30 @@ let url = new URLSearchParams(window.location.search);
 
 if (url.has("id")) {
 
-    fetch(`http://swapi.dev/api/species/${url.get("id")}`)
+    fetch(`http://swapi.dev/api/films/${url.get("id")}`)
         .then(res => res.json())
         .then(function(data) {
 
             /* title: */
-            document.querySelector("title").innerText = data.name + " | Star Wars API";
+            document.querySelector("title").innerText = data.title + " | Star Wars API";
 
             /* name: */
-            document.querySelector(".detailsSpecies__name").innerText = data.name;
+            document.querySelector(".detailsFilms__name").innerText = data.title;
 
-            /* classification: */
-            document.querySelector(".detailsSpecies__classification").innerText = data.classification;
+            /* opening crawl: */
+            document.querySelector(".detailsFilms__description").innerText = data.opening_crawl;
 
-            /* designation: */
-            document.querySelector(".detailsSpecies__designation").innerText = data.designation;
+            /* Episode ID: */
+            document.querySelector(".detailsFilms__episode").innerText = data.episode_id;
 
-            /* average lifespan: */
-            document.querySelector(".detailsSpecies__lifespan").innerText = data.average_lifespan;
+            /* director: */
+            document.querySelector(".detailsFilms__director").innerText = data.director;
 
-            /* language: */
-            document.querySelector(".detailsSpecies__language").innerText = data.average_language;
+            /* producer: */
+            document.querySelector(".detailsFilms__producer").innerText = data.producer;
+
+            /* release date: */
+            document.querySelector(".detailsFilms__release").innerText = data.release_date;
 
             /* homeworld: */
             fetch(`https://swapi.dev/api/planets/${url.get("id")}`)

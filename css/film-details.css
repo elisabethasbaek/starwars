@@ -1,0 +1,73 @@
+.detailsFilms{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    height: 100vh;
+}
+
+.detailsFilms__name{
+    justify-self: center;
+    padding: 10vw 10vw 4vw 10vw;
+    grid-area: 1/1/2/3;
+    font-family: 'star_jediregular';
+    font-size: 8vw;
+    text-transform: lowercase;
+    line-height: 7vw;
+    text-align: center;
+    transition: 2s;
+}
+
+.detailsFilms__description{
+    grid-area: 2/1/3/2;
+    justify-self: end;
+    text-align: right;
+    font-family: 'Poller One', cursive;
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+    max-width: 60%;
+    margin-right: 5vw;
+    padding-bottom: 10vw;
+}
+
+.detailsFilms__list{
+    grid-area: 2/2/3/3;
+    padding-bottom: 10vw;
+    margin-left: 5vw;
+}
+
+.detailsFilms__introduction{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+
+.detailsFilms__category{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.detailsFilms__category:not(:first-of-type){
+    padding-top: 2.5vw;
+}
+
+.detailsFilms__category a:hover{
+    color: #1fa5ff;
+}
+
+.detailsFilms__specifics{
+    padding-left: 3vw;
+    line-height: 2vw;
+    text-transform: capitalize;
+}
+
+.detailsFilms__films{
+    display: flex;
+    flex-direction: column;
+}
+
+.details__film:hover{
+    color: #1fa5ff;
+    margin-left: 1vw;
+	transition: 1s;
+}
