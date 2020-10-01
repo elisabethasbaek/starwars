@@ -1,12 +1,17 @@
 header{
     position: fixed;   
     top: 0;
-    right: 0;
-    width: 100vw;
+    max-width: 100vw;
     background: rgba(17, 14, 29, 0.7);
     display: grid;
     grid-template-columns: 45% 1fr 45%;
 }
+
+    @media screen and (max-width: 600px){
+        header{
+            grid-template-columns: auto auto;
+        }   
+    }
 
 header .headline{
 	font-family: 'star_jediregular';
@@ -17,11 +22,15 @@ header .headline{
 	align-self: center;
 }
 
+    @media screen and (max-width: 600px){
+        header .headline{
+            display: none;
+        }   
+    }
+
 header ul{
     font-family: 'Anonymous Pro', monospace;
     display: flex;
-    font-weight: 700;
-    font-size: 0.8rem;
     text-transform: uppercase;
 }
 
@@ -37,8 +46,26 @@ header ul{
 .secondNav a{
     padding: 0 1vw;
     line-height: 4rem;
+    font-weight: 700;
+    font-size: 0.8rem;
     color: #FFCB1F;
 }
+
+.navHome{
+    display: none;
+}
+
+    @media screen and (max-width: 600px){ 
+        .firstNav a,
+        .secondNav a{
+            -padding: 0 2.5vw;
+            font-size: 2.2vw;
+        }
+
+        .navHome{
+            display: contents;
+        }
+    }
 
 .firstNav a:hover,
 .secondNav a:hover{

@@ -22,8 +22,8 @@
     justify-self: end;
     text-align: right;
     font-family: 'Poller One', cursive;
-    font-size: 0.9vw;
-    line-height: 1.7vw;
+    font-size: 1.1vw;
+    line-height: 2vw;
     max-width: 60%;
     margin-right: 5vw;
     padding-bottom: 10vw;
@@ -66,7 +66,11 @@
     flex-direction: column;
 }
 
-.details__film:hover{
+.details__people:hover,
+.details__planet:hover,
+.details__starships:hover,
+.details__vehicles:hover,
+.details__species:hover{
     color: #1fa5ff;
     margin-left: 1vw;
 	transition: 1s;

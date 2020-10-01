@@ -1,11 +1,18 @@
 .frontpage{
 	display: grid;
-	grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr;
 	height: 100vh;
 }
 
+    @media screen and (max-width: 600px){
+        .frontpage{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60% 40%;
+        }
+    }
+
 .frontpage .headline{
-    grid-area: 1/2/2/3;
 	font-family: 'star_jediregular';
 	text-transform: uppercase;
 	font-size: 12vw;
@@ -14,6 +21,14 @@
 	align-self: center;
 	transition: 2s;
 }
+
+    @media screen and (max-width: 600px){
+        .frontpage .headline{
+            grid-area: 1/1/2/3;
+            font-size: 18vw;
+	        line-height: 18vw;
+        }
+    }
 
 .navigationButtons__first,
 .navigationButtons__second{
@@ -34,6 +49,30 @@
     transition: 2s;
     max-width: 100%;
 }
+
+    @media screen and (max-width: 800px){
+        .navigationButtons__first a,
+        .navigationButtons__second a{
+            font-size: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .navigationButtons__first{
+            padding-right:10vw;
+            align-self: start;
+        }
+        
+        .navigationButtons__second{
+            padding-left: 10vw;
+            align-self: start;
+        }
+
+        .navigationButtons__first a,
+        .navigationButtons__second a{
+            font-size: 4vw;
+        }
+    }
 
 .navigationButtons__first a:hover{
     color: #1fa5ff;

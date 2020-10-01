@@ -27,59 +27,125 @@ if (url.has("id")) {
             /* release date: */
             document.querySelector(".detailsFilms__release").innerText = data.release_date;
 
-            /* homeworld: */
-            fetch(`https://swapi.dev/api/planets/${url.get("id")}`)
-                .then(res => res.json())
-                .then(function(data) {
-                    let array = data.url.split("/");
-                    let id = array[array.length - 2];
+            /* characters: */
+            if(data.characters.length){
+                data.characters.forEach(function(character){
+                    fetch(character)
+                        .then(res => res.json())
+                        .then(function(data) { 
+                            let peopleTemplate = document.querySelector("#details__people");
+                            let peopleList = document.querySelector(".detailsFilms__people");
 
-                    document.querySelector(".detailsSpecies__homeworld").innerText = data.name;
-                    document.querySelector(".detailsSpecies__homeworld").href = `/planet-sheet.html?id=${id}`;
+                            let array = data.url.split("/");
+                            let id = array[array.length - 2];
+
+                            let clone = peopleTemplate.content.cloneNode(true);
+                            clone.querySelector(".details__people").innerText = data.name;
+                            clone.querySelector(".details__people").href = `/people-sheet.html?id=${id}`;
+                            
+                            peopleList.appendChild(clone);
+                        }) 
                 })
+            } else {
+                document.querySelector(".category__people").remove();
+                document.querySelector("#details__people").remove();
+            }
 
-            /* people: */
-            if(data.people.length){
-            data.people.forEach(function(person){
-                fetch(person)
-                    .then(res => res.json())
-                    .then(function(data) { 
-                        let peopleTemplate = document.querySelector("#details__people");
-                        let peopleList = document.querySelector(".detailsSpecies__people");
+            /* planets: */
+            if(data.planets.length){
+                data.planets.forEach(function(planet){
+                    fetch(planet)
+                        .then(res => res.json())
+                        .then(function(data) { 
+                            let planetTemplate = document.querySelector("#details__planets");
+                            let planetList = document.querySelector(".detailsFilms__planets");
 
-                        let array = data.url.split("/");
-                        let id = array[array.length - 2];
+                            let array = data.url.split("/");
+                            let id = array[array.length - 2];
 
-                        let clone = peopleTemplate.content.cloneNode(true);
-                        clone.querySelector(".details__people").innerText = data.name;
-                        clone.querySelector(".details__people").href = `/people-sheet.html?id=${id}`;
-                        
-                        peopleList.appendChild(clone);
-                    }) 
-            })
-        } else {
-            document.querySelector(".category__people").remove();
-            document.querySelector("#details__people").remove();
-        }
+                            let clone = planetTemplate.content.cloneNode(true);
+                            clone.querySelector(".details__planet").innerText = data.name;
+                            clone.querySelector(".details__planet").href = `/planet-sheet.html?id=${id}`;
+                            
+                            planetList.appendChild(clone);
+                        }) 
+                })
+            } else {
+                document.querySelector(".category__planet").remove();
+                document.querySelector("#details__planet").remove();
+            }
 
-        /* films: */
-        data.films.forEach(function(film){
-            fetch(film)
-                .then(res => res.json())
-                .then(function(data) { 
-                    let filmTemplate = document.querySelector("#details__films");
-                    let filmList = document.querySelector(".detailsSpecies__films");
+            /* starships: */
+            if(data.starships.length){
+                data.starships.forEach(function(starship){
+                    fetch(starship)
+                        .then(res => res.json())
+                        .then(function(data) { 
+                            let starshipTemplate = document.querySelector("#details__starships");
+                            let starshipList = document.querySelector(".detailsFilms__starships");
 
-                    let array = data.url.split("/");
-                    let id = array[array.length - 2];
+                            let array = data.url.split("/");
+                            let id = array[array.length - 2];
 
-                    let clone = filmTemplate.content.cloneNode(true);
-                    clone.querySelector(".details__film").innerText = data.title;
-                    clone.querySelector(".details__film").href = `/film-sheet.html?id=${id}`;
-                    
-                    filmList.appendChild(clone);
-                }) 
-        })
+                            let clone = starshipTemplate.content.cloneNode(true);
+                            clone.querySelector(".details__starship").innerText = data.name;
+                            clone.querySelector(".details__starship").href = `/starships-sheet.html?id=${id}`;
+                            
+                            starshipList.appendChild(clone);
+                        }) 
+                })
+            } else {
+                document.querySelector(".category__starship").remove();
+                document.querySelector("#details__starship").remove();
+            }
+
+            /* vehicles: */
+            if(data.vehicles.length){
+                data.vehicles.forEach(function(vehicle){
+                    fetch(vehicle)
+                        .then(res => res.json())
+                        .then(function(data) { 
+                            let vehicleTemplate = document.querySelector("#details__vehicles");
+                            let vehicleList = document.querySelector(".detailsFilms__vehicles");
+
+                            let array = data.url.split("/");
+                            let id = array[array.length - 2];
+
+                            let clone = vehicleTemplate.content.cloneNode(true);
+                            clone.querySelector(".details__vehicle").innerText = data.name;
+                            clone.querySelector(".details__vehicle").href = `/vehicle-sheet.html?id=${id}`;
+                            
+                            vehicleList.appendChild(clone);
+                        }) 
+                })
+            } else {
+                document.querySelector(".category__vehicle").remove();
+                document.querySelector("#details__vehicle").remove();
+            }
+
+            /* species: */
+            if(data.species.length){
+                data.species.forEach(function(speci){
+                    fetch(speci)
+                        .then(res => res.json())
+                        .then(function(data) { 
+                            let speciesTemplate = document.querySelector("#details__species");
+                            let speciesList = document.querySelector(".detailsFilms__species");
+
+                            let array = data.url.split("/");
+                            let id = array[array.length - 2];
+
+                            let clone = speciesTemplate.content.cloneNode(true);
+                            clone.querySelector(".details__species").innerText = data.name;
+                            clone.querySelector(".details__species").href = `/species-sheet.html?id=${id}`;
+                            
+                            speciesList.appendChild(clone);
+                        }) 
+                })
+            } else {
+                document.querySelector(".category__species").remove();
+                document.querySelector("#details__species").remove();
+            }
 
     }) /* end of .then in fetch */
 
