@@ -7,6 +7,9 @@ function peopleDetails(){
             .then(res => res.json())
             .then(function(data) {
 
+                /* title: */
+                document.querySelector(".titlePeople").innerText = data.name + " | Star Wars API";
+
                 /* name: */
                 document.querySelector(".detailsPeople__name").innerText = data.name;
 
@@ -37,7 +40,7 @@ function peopleDetails(){
 
                             let clone = filmTemplate.content.cloneNode(true);
                             clone.querySelector(".details__film").innerText = data.title;
-                            clone.querySelector(".details__film").href = `/films-sheet.html?id=${id}`;
+                            clone.querySelector(".details__film").href = `/film-sheet.html?id=${id}`;
                             
                             filmList.appendChild(clone);
                         }) 
@@ -57,7 +60,7 @@ function peopleDetails(){
 
                                 let clone = vehicleTemplate.content.cloneNode(true);
                                 clone.querySelector(".details__vehicle").innerText = data.name;
-                                clone.querySelector(".details__vehicle").href = `/vehicles-sheet.html?id=${id}`;
+                                clone.querySelector(".details__vehicle").href = `/vehicle-sheet.html?id=${id}`;
                                 
                                 vehicleList.appendChild(clone);
                             }) 
@@ -82,7 +85,7 @@ function peopleDetails(){
                                 let clone = starshipTemplate.content.cloneNode(true);
                                 
                                 clone.querySelector(".details__starship").innerText = data.name;
-                                clone.querySelector(".details__starship").href = `/starships-sheet.html?id=${id}`;
+                                clone.querySelector(".details__starship").href = `/starship-sheet.html?id=${id}`;
                                 
                                 starshipList.appendChild(clone);
                             }) 

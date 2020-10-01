@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"> <!-- language -->
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Elisabeth Asbaek Jeppesen"> <!-- author -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
+
+	<script src="/js/details.js" type="module" defer></script> <!-- javascript -->
+	
+	<title class="titlePlanets">Star Wars API</title>
+</head>
+  
+<body>
+<div id="wrapper"> <!-- start wrapper -->
+    
+<section class="starryBackground">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+</section>
+
+<header>
+	<nav class="firstNav">
+		<ul>
+			<li><a href="/people.html">People</a></li>
+			<li><a href="/planets.html">Planets</a></li>
+			<li><a href="/starships.html">Starships</a></li>
+		</ul>
+	</nav>
+
+	<h1 class="headline"><a href="/index.html">Star<br>Wars</a></h1>
+	
+	<nav class="secondNav">
+		<ul>
+			<li><a href="/vehicles.html">Vehicles</a></li>
+			<li><a href="/species.html">Species</a></li>
+			<li><a href="/films.html">Films</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main class="detailsPlanets">
+
+    <section>
+        <section class="detailsPlanets__bigBold">
+            <p class="detailsPlanets__introduction">Lorem ipsum dolor sit:</p>
+
+            <h1 class="detailsPlanets__name"></h1>
+
+            <p class="detailsPlanets__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In inventore nisi nulla? Ullam cum est quia at laudantium dolor amet, ex nesciunt nulla, fugit aliquid, facere voluptatem. Illo, saepe! Ab.</p>
+        </section>
+    </section>
+
+    <section class="detailsPlanets__list">
+        <p class="detailsPlanets__category category__rotation">Rotation period:</p>
+        <p class="detailsPlanets__rotation detailsPlanets__specifics"></p>
+        
+        <p class="detailsPlanets__category category__orbital">Orbital period:</p>
+        <p class="detailsPlanets__orbital detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__diameter">Diameter:</p>
+        <p class="detailsPlanets__diameter detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__climate">Climate:</p>
+        <p class="detailsPlanets__climate detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__gravity">Gravity:</p>
+        <p class="detailsPlanets__gravity detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__terrain">Terrain:</p>
+        <p class="detailsPlanets__terrain detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__water">Surface water:</p>
+        <p class="detailsPlanets__water detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__population">Population:</p>
+        <p class="detailsPlanets__population detailsPlanets__specifics"></p>
+
+        <p class="detailsPlanets__category category__residents">Residents:</p>
+        <ul class="detailsPlanets__residents detailsPlanets__specifics"></ul>
+
+        <p class="detailsPlanets__category category__films">Films:</p>
+        <ul class="detailsPlanets__films detailsPlanets__specifics"></ul>
+    </section>
+
+</main>
+
+<!-- TEMPLATES: -->
+    <template id="details__residents">
+        <li class="details__residentListItem">
+            <a href="" class="details__resident"></a>
+        </li>
+    </template>
+
+    <template id="details__films">
+        <li class="details__filmListItem">
+            <a href="" class="details__film"></a>
+        </li>
+    </template>
+<!--             -->
+
+<footer>
+    <p>Made using <a href="www.swapi.dev" target="_blank">Star Wars API</a></p>
+</footer>
+
+</div> <!-- end wrapper -->
+</body>
+
+</html>
