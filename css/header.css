@@ -1,17 +1,13 @@
+@import '/css/burger-menu.css';
+
 header{
     position: fixed;   
     top: 0;
-    max-width: 100vw;
+    width: 100vw;
     background: rgba(17, 14, 29, 0.7);
     display: grid;
     grid-template-columns: 45% 1fr 45%;
 }
-
-    @media screen and (max-width: 600px){
-        header{
-            grid-template-columns: auto auto;
-        }   
-    }
 
 header .headline{
 	font-family: 'star_jediregular';
@@ -21,49 +17,35 @@ header .headline{
 	text-align: center;
 	align-self: center;
 }
-
-    @media screen and (max-width: 600px){
-        header .headline{
-            display: none;
-        }   
-    }
-
+    
 header ul{
-    font-family: 'Anonymous Pro', monospace;
     display: flex;
-    text-transform: uppercase;
 }
 
 .firstNav ul{
     justify-content: flex-end;
 }
-
+    
 .secondNav ul{
     justify-content: flex-start;
 }
 
 .firstNav a,
 .secondNav a{
+    font-family: 'Anonymous Pro', monospace;
     padding: 0 1vw;
     line-height: 4rem;
     font-weight: 700;
     font-size: 0.8rem;
     color: #FFCB1F;
+    text-transform: uppercase;
 }
-
-.navHome{
-    display: none;
-}
-
+    
     @media screen and (max-width: 600px){ 
         .firstNav a,
         .secondNav a{
-            -padding: 0 2.5vw;
+            padding: 0 2.5vw;
             font-size: 2.2vw;
-        }
-
-        .navHome{
-            display: contents;
         }
     }
 
