@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"> <!-- language -->
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Elisabeth Asbaek Jeppesen"> <!-- author -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css"> <!-- connect to css file -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  <!-- font awesome -->
+
+	<script src="/js/vehicle-details.js" type="module" defer></script> <!-- javascript -->
+	
+	<title>Star Wars API</title>
+</head>
+  
+<body>
+<div id="wrapper"> <!-- start wrapper -->
+    
+<section class="starryBackground">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+</section>
+
+<header>
+	<nav class="firstNav">
+		<ul>
+			<li><a href="/people.html">People</a></li>
+			<li><a href="/planets.html">Planets</a></li>
+			<li><a href="/starships.html">Starships</a></li>
+		</ul>
+	</nav>
+
+	<h1 class="headline"><a href="/index.html">Star<br>Wars</a></h1>
+	
+	<nav class="secondNav">
+		<ul>
+			<li><a href="/vehicles.html">Vehicles</a></li>
+			<li><a href="/species.html">Species</a></li>
+			<li><a href="/films.html">Films</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main class="detailsVehicles">
+
+    <section>
+        <section class="detailsVehicles__bigBold">
+            <p class="detailsVehicles__introduction">Lorem ipsum dolor sit:</p>
+
+            <h1 class="detailsVehicles__name"></h1>
+
+            <p class="detailsVehicles__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In inventore nisi nulla? Ullam cum est quia at laudantium dolor amet, ex nesciunt nulla, fugit aliquid, facere voluptatem. Illo, saepe! Ab.</p>
+        </section>
+    </section>
+
+    <section class="detailsVehicles__list">
+        <p class="detailsVehicles__category category__model">Model:</p>
+        <p class="detailsVehicles__model detailsVehicles__specifics"></p>
+
+        <p class="detailsVehicles__category category__manufacturer">Manufacturer:</p>
+        <p class="detailsVehicles__manufacturer detailsVehicles__specifics"></p>
+
+        <p class="detailsVehicles__category category__vehicleClass">Vehicle class:</p>
+        <p class="detailsVehicles__vehicleClass detailsVehicles__specifics"></p>
+
+        <p class="detailsVehicles__category category__films">
+            <a href="/films.html">Films:</a>
+        </p>
+        <ul class="detailsVehicles__films detailsVehicles__specifics"></ul>
+    </section>
+
+</main>
+
+<!-- TEMPLATES: -->
+    <template id="details__films">
+        <li class="details__filmListItem">
+            <a href="" class="details__film"></a>
+        </li>
+    </template>
+<!--             -->
+
+<footer>
+    <p>Made using <a href="www.swapi.dev" target="_blank">Star Wars API</a></p>
+</footer>
+
+</div> <!-- end wrapper -->
+</body>
+
+</html>

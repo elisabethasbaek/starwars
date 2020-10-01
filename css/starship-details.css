@@ -1,0 +1,72 @@
+.detailsStarships{
+	display: grid;
+	grid-template-columns: 60% 40%;
+    height: 100vh;
+}
+
+.detailsStarships__bigBold{
+    position: fixed;
+    left: 0;
+    top: 25%;
+    max-width: 60%;
+    margin-left: 5vw;
+}
+
+.detailsStarships__list{
+    padding: 10vw 0;
+    margin-left: 5vw;
+}
+
+.detailsStarships__name{
+	font-family: 'star_jediregular';
+    font-size: 7vw;
+    text-transform: lowercase;
+	line-height: 7vw;
+    text-align: start;
+	transition: 2s;
+}
+
+.detailsStarships__introduction{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+
+.detailsStarships__description{
+    font-family: 'Poller One', cursive;
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+    padding-top: 2vw;
+    max-width: 60%;
+}
+
+.detailsStarships__category{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.detailsStarships__category:not(:first-of-type){
+    padding-top: 2.5vw;
+}
+
+.detailsStarships__category a:hover{
+    color: #1fa5ff;
+}
+
+.detailsStarships__specifics{
+    padding-left: 3vw;
+    line-height: 2vw;
+    text-transform: capitalize;
+}
+
+.detailsStarships__films{
+    display: flex;
+    flex-direction: column;
+}
+
+.details__film:hover{
+    color: #1fa5ff;
+    margin-left: 1vw;
+	transition: 1s;
+}
