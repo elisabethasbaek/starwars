@@ -4,8 +4,11 @@
 	height: 100vh;
 }
 
-    @media screen and (max-width: 800px){
-        
+    @media screen and (max-width: 450px){
+        .filmDetails{
+            grid-template-columns: auto;
+            grid-template-rows: 60% 40%;
+        }
     }
 
 .filmDetails section{
@@ -15,17 +18,54 @@
     width: 100%;
 }
 
-.filmListItem{
+    @media screen and (max-width: 450px){
+        .filmDetails section{
+            align-self: end;
+            padding-bottom: 10vw;
+        }
+    }
+
+.film{
     font-size: 1vw;
 	line-height: 3vw;
-	text-align: end;
 }
+
+    @media screen and (max-width: 800px){
+        .film{
+            font-size: 1.8vw;
+            line-height: 5vw;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        .film{
+            font-size: 2.2vw;
+            line-height: 6.5vw;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .film{
+            font-size: 3vw;
+            line-height: 9vw;
+        }
+    }
 
 .film:hover{
     padding-right: 1vw;
-	color: #1fa5ff;
-	transition: 0.5s;
+    color: #1fa5ff;
+    transition: 0.5s;
 }
+
+.filmListItem{
+	text-align: end;
+}
+
+    @media screen and (max-width: 450px){
+        .filmListItem{
+            text-align: center;
+        }
+    }
 
 .filmDetails .arrows{
     display: grid;
@@ -35,6 +75,28 @@
     font-size: 2vw;
     padding-top: 2rem;
 }
+
+    @media screen and (max-width: 800px){
+        .filmDetails .arrows{
+            font-size: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        .filmDetails .arrows{
+            font-size: 4vw;
+            padding-top: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .filmDetails .arrows{
+            font-size: 8vw;
+            padding-top: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        }
+    }
 
 .filmDetails .arrows a:hover{
     color: #1fa5ff;
@@ -55,3 +117,17 @@
     align-self: center;
     transition: 2s;
 }
+
+    @media screen and (max-width: 450px){
+        .filmDetails .headline{
+            font-size: 18vw;
+            line-height: 18vw;
+            align-self: start;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .filmList{
+            text-align: center;
+        }
+    }
