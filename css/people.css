@@ -4,6 +4,13 @@
 	height: 100vh;
 }
 
+	@media screen and (max-width: 450px){
+		.characterDetails{
+			grid-template-columns: auto;
+			grid-template-rows: 40% 60%;
+		}
+	}
+
 .characterDetails .headline{
 	font-family: 'star_jediregular';
 	text-transform: uppercase;
@@ -14,16 +21,44 @@
 	transition: 2s;
 }
 
+	@media screen and (max-width: 450px){
+		.characterDetails .headline{
+			font-size: 18vw;
+			line-height: 18vw;
+			align-self: end;
+		}
+	}
+
 .characterDetails section{
     align-self: center;
     transition: 2s;
 }
 
+	@media screen and (max-width: 450px){
+		.characterList{
+			
+		}
+	}
+
 .character{
 	font-size: 1vw;
-	line-height: 3rem;
+	line-height: 3vw;
 	text-align: start;
 }
+
+	@media screen and (max-width: 800px){
+		.character{
+			font-size: 1.8vw;
+			line-height: 5vw;
+		}
+	}
+
+	@media screen and (max-width: 550px){
+		.character{
+			font-size: 2.2vw;
+			line-height: 6.5vw;
+		}
+	}
 
 .character:hover{
 	padding-left: 1vw;
@@ -33,12 +68,24 @@
 
 .characterDetails .arrows{
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     font-size: 2vw;
-    letter-spacing: 3vw;
 	padding-top: 2rem;
 	text-align: start;
 }
+
+	@media screen and (max-width: 800px){
+		.characterDetails .arrows{
+			font-size: 3vw;
+		}
+	}
+
+	@media screen and (max-width: 550px){
+		.characterDetails .arrows{
+			font-size: 4vw;
+			padding-top: 1.5rem;
+		}
+	}
 
 .characterDetails .arrows a:hover{
     color: #1fa5ff;

@@ -4,6 +4,10 @@
 	height: 100vh;
 }
 
+    @media screen and (max-width: 800px){
+        
+    }
+
 .filmDetails section{
     align-self: center;
     justify-self: end;
@@ -13,7 +17,7 @@
 
 .filmListItem{
     font-size: 1vw;
-	line-height: 3rem;
+	line-height: 3vw;
 	text-align: end;
 }
 
